@@ -5,17 +5,18 @@ public class Finra {
     public static void main(String[] args) {
 
         int n = 30;
-
+        String result;
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                System.out.print("FINRA ");
+                result = "FINRA ";
             } else if (i % 3 == 0) {
-                System.out.print("FIN ");
+                result = "FIN ";
             } else if (i % 5 == 0) {
-                System.out.print("RA ");
+                result = "RA ";
             } else {
-                System.out.print(i + " ");
+                result = i + " ";
             }
+            System.out.print(result);
         }
 
     }
