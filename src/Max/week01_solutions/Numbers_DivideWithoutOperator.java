@@ -3,23 +3,26 @@ package Max.week01_solutions;
 public class Numbers_DivideWithoutOperator {
 
     public static void main(String[] args) {
-        int num1 = 16;
+        int num1 = 17;
         int num2 = 4;
-        System.out.println(num1 +" / " + num2 + " = " + division(num1, num2));
+        division(num1,num2);
+
 
 
     }
-    public static int division(int num1, int num2){
+    public static void division(int num1, int num2){
         int count = 0;
         if (num2 == 0){
             System.err.println("CANNOT BE DIVIDED BY ZERO");
             System.exit(1);
+        } //    1       4
+        while (num1 >= num2) {//false and ext the loop
+            num1 -= num2; //17 - 4 = 13, 13-4=9, 9-4=5, 5-4=1
+            count++;//1, 2, 3,4
+
         }
-        while (num1 >= num2){
-            num1 -= num2;
-            count++;
-        }
-        return count;
+        System.out.println("result is " + count + " reminder is  " + num1);
+
     }
 
     /*

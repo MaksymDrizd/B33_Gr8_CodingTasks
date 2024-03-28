@@ -4,7 +4,7 @@ public class Numbers_OddOrEven {
 
     public static void main(String[] args) {
 
-        int n = 6;
+        int n = 7;
         evenOrOdd(n);
 
 
