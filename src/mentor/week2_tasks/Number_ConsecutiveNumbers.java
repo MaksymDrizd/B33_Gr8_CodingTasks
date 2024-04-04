@@ -36,6 +36,7 @@ public class Number_ConsecutiveNumbers {
 
     public static void main(String[] args) {
 
+
     }
 
 

@@ -71,8 +71,11 @@ public class Number_ConsecutiveNumbers {
             if (i % 5 == 0) {
                 output += "Coders";
             }
+            if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0){
+                output += i;
+            }
 
-            System.out.println(output.isEmpty() ? i : output);
+            System.out.println(output);
         }
 
     }
