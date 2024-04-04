@@ -1,4 +1,4 @@
-package mentor.week1_tasks;
+package Falana.week01_solutions;
 
 public class Numbers_OddOrEven {
 
