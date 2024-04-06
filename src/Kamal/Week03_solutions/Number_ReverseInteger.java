@@ -1,4 +1,4 @@
-package Kamal.week3_tasks;
+package Kamal.Week03_solutions;
 
 public class Number_ReverseInteger {
     public static void main(String[] args) {
