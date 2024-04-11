@@ -1,4 +1,4 @@
-package Max.week2_tasks;
+package Max.week02_solutions;
 
 public class Number_ConsecutiveNumbers {
 
