@@ -16,9 +16,14 @@ public class String_SameLetters {
         String str1 = "abc";
         String str2 = "cab";
 
-            Set<String> set1 = new TreeSet<>(Arrays.asList(str1.split("")));
-            Set<String> set2 = new TreeSet<>(Arrays.asList(str2.split("")));
-            System.out.println(set1.equals(set2));
+            if (!(str1.length() == str2.length())) {
+                System.out.println("false");
+            }else {
+                Set<String> set1 = new TreeSet<>(Arrays.asList(str1.split("")));
+                Set<String> set2 = new TreeSet<>(Arrays.asList(str2.split("")));
+                System.out.println(set1.equals(set2));
+            }
+
 
 
 
