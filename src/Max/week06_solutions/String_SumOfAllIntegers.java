@@ -1,5 +1,7 @@
 package Max.week06_solutions;
 
+import java.util.Collections;
+
 public class String_SumOfAllIntegers {
 
 
@@ -13,6 +15,25 @@ public class String_SumOfAllIntegers {
 
             For example, s="12 some text 3 7", result: 22 (12+3+7=22)
         */
+    public static void main(String[] args) {
+
+        String str = "12 some text 3 7";
+        System.out.println(sumOfInt(str));
+    }
+
+    public static int sumOfInt(String str){
+
+        int result = 0;
+        String[] arr = str.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+
+            result += Integer.parseInt(arr[i]);
+        }
+
+
+        return result;
+    }
+
 
 
 

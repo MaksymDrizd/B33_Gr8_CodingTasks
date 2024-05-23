@@ -1,5 +1,10 @@
 package Max.week06_solutions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class String_PassWordValidation {
 
     /*
@@ -12,13 +17,39 @@ public class String_PassWordValidation {
 
         if all requirements above are met, the method returns true, otherwise returns false
      */
+    public static boolean passwordIsValid(String password){
+
+        if (password.length() < 6 || password.contains(" ")){
+            return false;
+        }
+        boolean hasUpperCase = false;
+        boolean hasLowerCase = false;
+        boolean hasDigit = false;
+        boolean hasSpecialChar = false;
+
+        for (int i = 0; i < password.length(); i++) {
+                if (Character.isUpperCase(password.charAt(i))){
+                    hasUpperCase = true;
+                } else if (Character.isLowerCase(password.charAt(i))) {
+                    hasLowerCase = true;
+                } else if (Character.isDigit(password.charAt(i))) {
+                    hasDigit = true;
+                } else if (!Character.isLetterOrDigit(password.charAt(i))) {
+                    hasSpecialChar =true;
+                }
+
+        }
+
+        return hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar;
+
+    }
 
 
 
 
     public static void main(String[] args) {
 
-        //System.out.println(passwordIsValid("123abc?"));
+        System.out.println(passwordIsValid("123Abc?"));
     }
 
 
