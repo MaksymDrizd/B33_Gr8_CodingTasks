@@ -20,7 +20,6 @@ public class Array_SumUpToZero {
 
 
         for (int i = 1; i < arr.length; i++) {
-
             if (i % 2 != 0){
                 arr[i - 1] = i + 1;
             }else{
@@ -31,7 +30,6 @@ public class Array_SumUpToZero {
         if (n % 2 != 0){
             arr[arr.length - 1] = 0;
         }
-
                 System.out.println(Arrays.toString(arr));
 
 
