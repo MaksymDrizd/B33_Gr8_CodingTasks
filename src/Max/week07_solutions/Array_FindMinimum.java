@@ -1,9 +1,4 @@
-package Max.week7_solutions;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+package Max.week07_solutions;
 
 public class Array_FindMinimum {
 

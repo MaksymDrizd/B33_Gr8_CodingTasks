@@ -1,4 +1,4 @@
-package Max.week7_solutions;
+package Max.week07_solutions;
 
 import java.util.Arrays;
 
