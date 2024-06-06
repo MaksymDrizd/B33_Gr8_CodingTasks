@@ -22,9 +22,6 @@ public class String_Reverse {
         //Printing out the reverse1
         System.out.println(reverse1);
 
-        //String str = "ABCD";
-        //Calling the reverse method
-        //reverseString(str);
     }
 
       // Creating static method with parameters
