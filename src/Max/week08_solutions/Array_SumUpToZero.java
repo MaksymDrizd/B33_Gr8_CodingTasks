@@ -19,6 +19,7 @@ public class Array_SumUpToZero {
         int[] arr = new int[n];
 
 
+
         for (int i = 1; i < arr.length; i++) {
             if (i % 2 != 0){
                 arr[i - 1] = i + 1;
