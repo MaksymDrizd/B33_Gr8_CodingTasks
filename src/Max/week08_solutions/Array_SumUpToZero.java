@@ -18,24 +18,22 @@ public class Array_SumUpToZero {
 
         int[] arr = new int[n];
 
-
-
         for (int i = 1; i < arr.length; i++) {
             if (i % 2 != 0){
                 arr[i - 1] = i + 1;
             }else{
-                arr[i -1]= -(arr[i - 2]);
+                arr[i - 1]= -(arr[i - 2]);
             }
         }
-        arr[arr.length - 1] = -(arr[arr.length - 2]);
         if (n % 2 != 0){
             arr[arr.length - 1] = 0;
+        }else {
+            arr[arr.length - 1] = -(arr[arr.length - 2]);
         }
                 System.out.println(Arrays.toString(arr));
 
-
-
     }
+
 
 
 
