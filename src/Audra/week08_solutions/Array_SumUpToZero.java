@@ -1,4 +1,4 @@
-package mentor.week8_tasks;
+package Audra.week08_solutions;
 
 public class Array_SumUpToZero {
 
@@ -10,6 +10,7 @@ public class Array_SumUpToZero {
     The answer [1, -1,1,3] would be incorrect (because value 1 occurs twice).
     For N = 3 one of the possible answers is [-1,0,1] (but there are many more correct answers).
      */
+
 
 
 
