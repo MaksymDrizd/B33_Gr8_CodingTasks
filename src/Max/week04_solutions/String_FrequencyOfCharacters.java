@@ -22,8 +22,23 @@ public class String_FrequencyOfCharacters {
         }
         System.out.println(result);
 
+        String result2 = "";
 
+        for (int i = 0; i < str.length(); i++) {
+            int count = 0;
+            char ch = str.charAt(i);
 
+            for (int j = 0; j < str.length(); j++) {
+                if (ch==str.charAt(j)){
+                    count++;
+                }
+            }
+            if (!result2.contains("" + ch)){
+                result2 += "" + ch + count;
+            }
+
+        }
+        System.out.print(result2);
     }
 
 
