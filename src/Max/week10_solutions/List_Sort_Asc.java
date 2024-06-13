@@ -14,7 +14,7 @@ the sort method.
      */
     public static void main(String[] args) {
 
-        List<Integer> nums = new ArrayList<>(Arrays.asList(12,7,13,5,2,9));
+        List<Integer> nums = new ArrayList<>(Arrays.asList(12,7,13,5,2,9,24,52,71,2));
 
         for (int i = 0; i < nums.size()-1; i++) {
             for (int j = 0; j < nums.size()-1; j++) {
